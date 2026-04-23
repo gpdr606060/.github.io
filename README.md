@@ -1,18 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rejuvenese — Clínica Estética</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --cream:    #f7f3ee;
+      --ivory:    #ede8df;
+      --gold:     #b89660;
+      --gold-lt:  #d4b483;
+      --sage:     #3d5247;
+      --charcoal: #1e1e1e;
+      --warm-gray:#7a7068;
+    }
 
-
-  
- 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
     html { scroll-behavior: smooth; }
- 
+
     body {
       font-family: 'Jost', sans-serif;
       background: var(--cream);
       color: var(--charcoal);
       overflow-x: hidden;
     }
- 
+
     /* ── CURSOR ── */
     * { cursor: none; }
     .cursor {
@@ -34,7 +48,7 @@
       transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .3s;
       opacity: .5;
     }
- 
+
     /* ── NAV ── */
     nav {
       position: fixed; top: 0; width: 100%; z-index: 100;
@@ -74,7 +88,7 @@
     }
     .nav-cta:hover { background: var(--gold) !important; }
     .nav-cta::after { display: none !important; }
- 
+
     /* ── HERO ── */
     .hero {
       min-height: 100vh;
@@ -140,7 +154,7 @@
       font-size: .68rem; letter-spacing: .2em; text-transform: uppercase;
       color: rgba(237,232,223,.5); margin-top: 6px;
     }
- 
+
     .hero-right {
       position: relative; overflow: hidden;
     }
@@ -174,7 +188,7 @@
       position: absolute; bottom: 0; left: 0; right: 0;
       height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
     }
- 
+
     /* ── MARQUEE ── */
     .marquee-wrap {
       overflow: hidden; background: var(--gold);
@@ -189,7 +203,7 @@
       color: var(--charcoal); margin: 0 40px;
     }
     .marquee-inner span::before { content: '✦  '; color: var(--sage); }
- 
+
     /* ── INTRO ── */
     .intro {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -223,7 +237,7 @@
       font-size: 1.35rem; font-style: italic; font-weight: 300;
       color: var(--sage); line-height: 1.6;
     }
- 
+
     /* ── SERVICES ── */
     .services { padding: 80px 80px 120px; background: var(--charcoal); }
     .services-header {
@@ -288,7 +302,7 @@
       text-decoration: none; transition: gap .3s;
     }
     .service-link:hover { gap: 14px; }
- 
+
     /* ── PROCESS ── */
     .process {
       padding: 120px 80px;
@@ -338,7 +352,7 @@
     .step-desc {
       font-size: .8rem; line-height: 1.8; color: var(--warm-gray); font-weight: 300;
     }
- 
+
     /* ── TESTIMONIALS ── */
     .testimonials { padding: 120px 80px; }
     .testimonials-header { text-align: center; margin-bottom: 80px; }
@@ -387,7 +401,7 @@
       font-size: .72rem; color: var(--warm-gray); margin-top: 2px;
       font-weight: 300;
     }
- 
+
     /* ── CTA BAND ── */
     .cta-band {
       background: var(--sage);
@@ -423,7 +437,7 @@
       transition: background .3s;
     }
     .cta-btn:hover { background: var(--gold-lt); }
- 
+
     /* ── FOOTER ── */
     footer {
       background: var(--charcoal);
@@ -473,7 +487,7 @@
       text-decoration: none; transition: border-color .3s, color .3s;
     }
     .footer-social:hover { border-color: var(--gold); color: var(--gold); }
- 
+
     /* ── ANIMATIONS ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
@@ -494,7 +508,7 @@
     .reveal.visible {
       opacity: 1; transform: translateY(0);
     }
- 
+
     /* ── MOBILE ── */
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
@@ -524,11 +538,11 @@
   </style>
 </head>
 <body>
- 
+
   <!-- CURSOR -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
- 
+
   <!-- NAV -->
   <nav id="nav">
     <a href="#" class="nav-logo">Re<span>juven</span>ese</a>
@@ -540,7 +554,7 @@
       <li><a href="#contacto" class="nav-cta">Reservar cita</a></li>
     </ul>
   </nav>
- 
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-left">
@@ -575,7 +589,7 @@
       <div class="hero-line"></div>
     </div>
   </section>
- 
+
   <!-- MARQUEE -->
   <div class="marquee-wrap">
     <div class="marquee-inner">
@@ -589,7 +603,7 @@
       <span>Hidratación Profunda</span><span>Nutrición Estética</span>
     </div>
   </div>
- 
+
   <!-- INTRO -->
   <section class="intro" id="nosotros">
     <div class="intro-left reveal">
@@ -603,7 +617,7 @@
       <p class="intro-quote">"Cada rostro cuenta su propia historia. Nosotros la hacemos brillar."</p>
     </div>
   </section>
- 
+
   <!-- SERVICES -->
   <section class="services" id="servicios">
     <div class="services-header reveal">
@@ -611,7 +625,7 @@
       <p class="services-desc">Soluciones estéticas integrales diseñadas para resultados naturales y duraderos.</p>
     </div>
     <div class="services-grid">
- 
+
       <div class="service-card reveal">
         <span class="service-num">01</span>
         <span class="service-icon">💉</span>
@@ -619,7 +633,7 @@
         <p class="service-text">Suaviza líneas de expresión y restaura el volumen perdido con toxina botulínica y ácido hialurónico de alta calidad. Resultados naturales y sutiles.</p>
         <a href="#contacto" class="service-link">Conocer más →</a>
       </div>
- 
+
       <div class="service-card reveal">
         <span class="service-num">02</span>
         <span class="service-icon">✨</span>
@@ -627,7 +641,7 @@
         <p class="service-text">Desde depilación láser hasta rejuvenecimiento con radiofrecuencia y ultrasónico. Tecnología de vanguardia para una piel más firme y radiante.</p>
         <a href="#contacto" class="service-link">Conocer más →</a>
       </div>
- 
+
       <div class="service-card reveal">
         <span class="service-num">03</span>
         <span class="service-icon">🌿</span>
@@ -635,7 +649,7 @@
         <p class="service-text">Renovación celular profunda con peelings químicos y tratamientos de hidratación intensiva. Luminosidad y textura excepcional desde la primera sesión.</p>
         <a href="#contacto" class="service-link">Conocer más →</a>
       </div>
- 
+
       <div class="service-card reveal">
         <span class="service-num">04</span>
         <span class="service-icon">🔬</span>
@@ -643,7 +657,7 @@
         <p class="service-text">Aprovecha el poder regenerativo de tu propio organismo. El tratamiento PRP estimula la producción de colágeno y acelera la renovación cutánea.</p>
         <a href="#contacto" class="service-link">Conocer más →</a>
       </div>
- 
+
       <div class="service-card reveal">
         <span class="service-num">05</span>
         <span class="service-icon">💆</span>
@@ -651,7 +665,7 @@
         <p class="service-text">Reductores, modeladores y anticelulíticos con tecnología de última generación. Transforma y redefine tu silueta de forma segura y efectiva.</p>
         <a href="#contacto" class="service-link">Conocer más →</a>
       </div>
- 
+
       <div class="service-card reveal">
         <span class="service-num">06</span>
         <span class="service-icon">💊</span>
@@ -659,10 +673,10 @@
         <p class="service-text">La belleza empieza desde adentro. Vitaminas, sueros y nutrientes específicos administrados para potenciar tus resultados y revitalizar tu energía.</p>
         <a href="#contacto" class="service-link">Conocer más →</a>
       </div>
- 
+
     </div>
   </section>
- 
+
   <!-- PROCESS -->
   <section class="process" id="proceso">
     <div class="process-inner">
@@ -692,7 +706,7 @@
       </div>
     </div>
   </section>
- 
+
   <!-- TESTIMONIALS -->
   <section class="testimonials" id="testimonios">
     <div class="testimonials-header reveal">
@@ -700,7 +714,7 @@
       <h2 class="test-heading">Historias de <em>transformación</em></h2>
     </div>
     <div class="test-grid">
- 
+
       <div class="test-card reveal">
         <div class="test-stars">
           <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -714,7 +728,7 @@
           </div>
         </div>
       </div>
- 
+
       <div class="test-card reveal">
         <div class="test-stars">
           <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -728,7 +742,7 @@
           </div>
         </div>
       </div>
- 
+
       <div class="test-card reveal">
         <div class="test-stars">
           <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -742,10 +756,10 @@
           </div>
         </div>
       </div>
- 
+
     </div>
   </section>
- 
+
   <!-- CTA BAND -->
   <section class="cta-band" id="contacto">
     <div class="reveal">
@@ -762,7 +776,7 @@
       </p>
     </div>
   </section>
- 
+
   <!-- FOOTER -->
   <footer>
     <div class="footer-top">
@@ -809,7 +823,7 @@
       </div>
     </div>
   </footer>
- 
+
   <script>
     // CURSOR
     const cursor = document.getElementById('cursor');
@@ -836,13 +850,13 @@
         ring.style.height   = '38px';
       });
     });
- 
+
     // NAV SCROLL
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
     });
- 
+
     // REVEAL ON SCROLL
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(entries => {
